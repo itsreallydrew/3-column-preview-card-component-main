@@ -9,6 +9,7 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px / 10px/16px = 62.5%;
+	height: 100vh;
 }
 
 .container {
@@ -16,13 +17,27 @@ html {
 
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
-	height: 100vh;
+	padding: 8rem 0;
 	align-items: center;
+	// overflow: scroll;
+
+	@media only screen and (min-width: $desktop) {
+		align-items: center;
+		justify-items: center;
+		height: 100vh;
+	}
 }
 
 main {
-	width: 90vw;
+	width: 80vw;
 	grid-column: 2;
 	border-radius: 1rem;
 	overflow: hidden;
+
+	@media only screen and (min-width: $desktop) {
+		height: 50vh;
+		width: 70vw;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
 }

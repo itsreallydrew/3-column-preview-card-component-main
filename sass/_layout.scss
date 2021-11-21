@@ -1,16 +1,71 @@
 .card {
-	display: grid;
-	grid-template-rows: repeat(4, min-content);
-
 	&-1 {
 		background-color: $orange;
+
+		button {
+			color: $orange;
+		}
 	}
 
 	&-2 {
 		background-color: $green;
+
+		button {
+			color: $green;
+		}
 	}
 
 	&-3 {
 		background-color: $darkgreen;
+
+		button {
+			color: $darkgreen;
+		}
+	}
+}
+
+.card-1,
+.card-2,
+.card-3 {
+	display: grid;
+	grid-template-rows: repeat(4, min-content);
+	gap: 3.5rem 0;
+	padding: 6rem;
+
+	@media only screen and (min-width: $desktop) {
+		padding: 4rem;
+		gap: 5rem 0;
+	}
+
+	.heading {
+		font-family: $font-2;
+		font-size: 4rem;
+		color: $neutral-2;
+		letter-spacing: 0.05rem;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-family: $font-1;
+		font-size: 1.5rem;
+		line-height: 1.8;
+		color: $neutral-1;
+	}
+
+	button {
+		border-radius: 3rem;
+		padding: 1.5rem;
+		width: 60%;
+		justify-self: flex-start;
+		outline: none;
+		border: none;
+		font-size: 1.5rem;
+
+		&:hover {
+			border: 2px solid $neutral-1;
+			color: $neutral-1;
+			background: transparent;
+			cursor: pointer;
+		}
 	}
 }
