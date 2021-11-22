@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
+- Solution URL: [Solution Link](https://www.frontendmentor.io/solutions/responsive-3-column-card-built-with-css-grid-z9Xh3FKh4)
 - Live Site URL: [Live Site](https://suspicious-pasteur-b73c61.netlify.app)
 
 ## My process
