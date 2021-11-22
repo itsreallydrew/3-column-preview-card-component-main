@@ -34,9 +34,15 @@ main {
 	border-radius: 1rem;
 	overflow: hidden;
 
+	@media only screen and (min-width: $medium) {
+		height: 50vh;
+		width: 90vw;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
 	@media only screen and (min-width: $desktop) {
 		height: 50vh;
-		width: 70vw;
+		width: 50vw;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 	}
