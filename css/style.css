@@ -30,25 +30,19 @@ html {
 }
 
 main {
+  height: 80vh;
   width: 80vw;
   grid-column: 2;
   border-radius: 1rem;
-  overflow: hidden;
-}
-@media only screen and (min-width: 56.25em) {
-  main {
-    height: 50vh;
-    width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+  overflow: scroll;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 @media only screen and (min-width: 90rem) {
   main {
-    height: 50vh;
-    width: 50vw;
+    height: 65vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    border-radius: 1rem;
+    overflow: hidden;
   }
 }
 
@@ -76,24 +70,8 @@ main {
 .card-3 {
   display: grid;
   grid-template-rows: repeat(4, min-content);
-  gap: 3.5rem 0;
+  gap: 6rem 0;
   padding: 6rem;
-}
-@media only screen and (min-width: 56.25em) {
-  .card-1,
-.card-2,
-.card-3 {
-    padding: 4rem;
-    gap: 4rem 0;
-  }
-}
-@media only screen and (min-width: 90rem) {
-  .card-1,
-.card-2,
-.card-3 {
-    padding: 5rem;
-    gap: 3rem 0;
-  }
 }
 .card-1 .heading,
 .card-2 .heading,
@@ -108,23 +86,9 @@ main {
 .card-2 p,
 .card-3 p {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.8;
+  font-size: 1.6rem;
+  line-height: 1.9;
   color: rgba(255, 255, 255, 0.75);
-}
-@media only screen and (min-width: 56.25em) {
-  .card-1 p,
-.card-2 p,
-.card-3 p {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (min-width: 90rem) {
-  .card-1 p,
-.card-2 p,
-.card-3 p {
-    font-size: 1.5rem;
-  }
 }
 .card-1 button,
 .card-2 button,
@@ -136,20 +100,6 @@ main {
   outline: none;
   border: none;
   font-size: 1.5rem;
-}
-@media only screen and (min-width: 56.25em) {
-  .card-1 button,
-.card-2 button,
-.card-3 button {
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 90rem) {
-  .card-1 button,
-.card-2 button,
-.card-3 button {
-    width: 60%;
-  }
 }
 .card-1 button:hover,
 .card-2 button:hover,

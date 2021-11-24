@@ -29,21 +29,28 @@ html {
 }
 
 main {
+	height: 80vh;
 	width: 80vw;
 	grid-column: 2;
 	border-radius: 1rem;
-	overflow: hidden;
+	overflow: scroll;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	// height: 85vh;
 
-	@media only screen and (min-width: $medium) {
-		height: 50vh;
-		width: 90vw;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
+	// @media only screen and (min-width: $medium) {
+	// 	height: 50vh;
+	// 	width: 90vw;
+	// 	display: grid;
+	// 	grid-template-columns: repeat(3, 1fr);
+	// }
+
 	@media only screen and (min-width: $desktop) {
-		height: 50vh;
-		width: 50vw;
+		height: 65vh;
+		// width: 50vw;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		border-radius: 1rem;
+		overflow: hidden;
+		// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		// grid-template-columns: repeat(3, 1fr);
 	}
 }
